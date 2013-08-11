@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<head>
+ <title>{{ site.title }}</title>
+</head>
+
+<body>
+<strong>Hello, world!</strong>
+
+<p>There is currently a post. But, can you see it? Here is an attempt to generate a list:</p>
+
+<ul>
+ {% for x in site.posts %}
+ <li>
+  <a href="{{ x.url }}">{{ x.title }}</a>
+ </li>
+ {% endfor %}
+</ul>
+
+{% include footer.html %}
+
+</body>
+</html>

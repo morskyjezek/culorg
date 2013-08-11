@@ -1,0 +1,42 @@
+---
+title: Blog
+---
+<!DOCTYPE HTML>
+<head>
+ <title>{{ page.title }} | {{ site.title }}</title>
+{% include head.html %}
+</head>
+
+<body>
+<div class="container">
+{% include nav.html %}
+
+{% include post-sidebar.html %}
+
+<content>
+<div class="offset-by-one twelve columns">
+<div class="blog-page-title">
+  <h2>Recent posts</h2>
+</div>
+
+{% for x in site.posts %}
+  <header class="entry-header"><h3 class="entry-title"><a href="{{ x.url }}">{{ x.title }}</a></h3></header>
+
+  <div class="entry-excerpt">
+  {{ x.excerpt }}
+  </div>
+
+  <div class="entry-meta">
+  Posted {{ x.date | date_to_string }} | Tagged {{ x.tags | array_to_sentence_string }}
+  </div>
+
+  <hr />
+{% endfor %}
+</div>
+</content><!-- end content -->
+
+{% include footer.html %}
+
+</div><!-- .container -->
+</body>
+</html>

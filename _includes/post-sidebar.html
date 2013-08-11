@@ -1,0 +1,20 @@
+  <!-- <div class="one-third column feature"> -->
+  <div class="three columns">
+    <h3>List of posts</h3>
+    <ul>
+     {% for x in site.posts %}
+     <li>
+      <a href="{{ x.url }}">{{ x.title }}</a>
+     </li>
+     {% endfor %}
+    </ul>
+    
+    <h3>List of pages</h3>
+    <ul>
+      {% for y in site.pages %}
+      <li>
+        <a href="{{ y.url }}">{{ y.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div><!-- left-column sidebar for posts -->

@@ -1,0 +1,24 @@
+source:      .
+destination: ./_site
+layouts:     ./_layouts
+include:     []
+exclude:     []
+keep_files:  []
+timezone:    America/New_York
+
+relative_permalinks: true
+
+permalink:     date
+paginate_path: 'page:num'
+
+markdown_ext:  markdown,mkd,mkdn,md
+
+kramdown:
+  toc_levels:   1..6
+  smart_quotes: lsquo, rsquo, ldquo, rdquo
+
+#site_configuration
+title: Cultural Organology
+author_fn: Jesse
+twitter: jesseajohnston
+#url:   http://www.jesseajohnston.net/

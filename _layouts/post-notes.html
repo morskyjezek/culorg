@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+ <title>{{ page.title }} | {{ site.title }}</title>
+{% include head.html %}
+</head>
+
+<body>
+<div class="container">
+{% include header.html %}
+<h1>{{ page.title }}</h1>
+
+content
+{{ content }}<!-- this outputs well-formed html from markdown -->
+
+
+OR page.content
+{{ page.content }} <!-- this outputs escaped html from markdown, so formats don't display -->
+
+<h3>List of posts</h3>
+<ul>
+ {% for x in site.posts %}
+ <li>
+  <a href="{{ x.url }}">{{ x.title }}</a>
+ </li>
+ {% endfor %}
+</ul>
+
+{% include footer.html %}
+
+</div><!-- .container -->
+</body>
+</html>
