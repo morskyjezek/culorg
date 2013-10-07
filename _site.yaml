@@ -10,6 +10,7 @@ handlers:
   static_files: '/_site/1/2/3/4/index.html'
   upload: '_site/.*'
 - url: '/(.*)/(.*)'
+<<<<<<< HEAD
   static_files: '_site/1/2'
   upload: '_site/.*'
 #problem with \ as escape char in following downloaded?
@@ -22,3 +23,7 @@ handlers:
 #- url: '/(.*)/(.*)'
 #  static_files: '_site/\1/\2'
 #  upload: '_site/.*'
+=======
+  static_files: '_site/\1/\2'
+  upload: '_site/.*'
+>>>>>>> 7b68012f67de386ce017054612d48c76711350ad
