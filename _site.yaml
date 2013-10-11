@@ -2,8 +2,8 @@ handlers:
 - url: '/'
   static_files: '_site/index.html'
   upload: '_site/.*'
-- url: '/blog'
-  static_files: '/blog/index.html'
+- url: 'blog/'
+  static_files: 'blog/index.html'
 #\ removed
 #- url: '/([^/]+)'
 #  static_files: '_site/1'
