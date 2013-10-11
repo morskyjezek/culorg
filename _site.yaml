@@ -2,10 +2,15 @@ handlers:
 - url: '/'
   static_files: '_site/index.html'
   upload: '_site/.*'
+<<<<<<< HEAD
 #?
 - url: 'blog/'
   static_files: '_blog/'
   upload: '_blog/.*'
+=======
+- url: '/blog/'
+  static_files: 'blog/index.html'
+>>>>>>> 7b51e38f9e5721a1f1d67606f6805173dd390bd6
 #\ removed
 #- url: '/([^/]+)'
 #  static_files: '_site/1'
@@ -16,8 +21,13 @@ handlers:
 #- url: '/(.*)/(.*)'
 #  static_files: '_site/1/2'
 #  upload: '_site/.*'
+<<<<<<< HEAD
 #
 # OLD - problem with \ as escape char in following downloaded?
+=======
+
+#OLD - problem with \ as escape char in following downloaded?
+>>>>>>> 7b51e38f9e5721a1f1d67606f6805173dd390bd6
 #- url: '/([^/]+)'
 #  static_files: '_site/\1'
 #  upload: '_site/.*'
