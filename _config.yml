@@ -5,6 +5,7 @@ include:     []
 exclude:     []
 keep_files:  []
 timezone:    America/New_York
+encoding:    UTF-8
 
 relative_permalinks: true
 
@@ -15,10 +16,10 @@ markdown_ext:  markdown,mkd,mkdn,md
 
 kramdown:
   toc_levels:   1..6
-  smart_quotes: lsquo, rsquo, ldquo, rdquo
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
 
 #site_configuration
 title: Cultural Organology
 author_fn: Jesse
 twitter: jesseajohnston
-#url:   http://www.jesseajohnston.net/
+#url:   http://essays.jesseajohnston.net/
